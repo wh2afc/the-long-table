@@ -1,0 +1,22 @@
+{
+  "villagers": [
+    {
+      "id": "marta", "displayName": "Marta",
+      "canRepay": true, "overlooked": false,
+      "homeX": -9.2, "seatCloseX": -1.1, "seatEdgeX": -3.6, "apartX": -10.6, "hiddenWhenApart": true,
+      "bodyColor": "#8C6E8E", "accentColor": "#E6DAC4", "height": 1.6, "width": 0.78
+    },
+    {
+      "id": "pip", "displayName": "Pip",
+      "canRepay": false, "overlooked": true,
+      "homeX": -1.9, "seatCloseX": 1.1, "seatEdgeX": 3.7, "apartX": -19.0, "hiddenWhenApart": true,
+      "bodyColor": "#6F8C5B", "accentColor": "#A65A32", "height": 1.05, "width": 0.55
+    },
+    {
+      "id": "tobias", "displayName": "Tobias",
+      "canRepay": true, "overlooked": false,
+      "homeX": 10.6, "seatCloseX": 2.2, "seatEdgeX": 4.9, "apartX": 10.6, "hiddenWhenApart": false,
+      "bodyColor": "#5C4A40", "accentColor": "#3A3634", "height": 1.95, "width": 0.95
+    }
+  ]
+}
