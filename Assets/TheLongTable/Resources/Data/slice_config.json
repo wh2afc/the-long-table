@@ -1,0 +1,12 @@
+{
+  "attentionPerDay": 4,
+  "startBread": 2,
+  "startCoin": 4,
+  "seasonLength": 7,
+  "witnessRadius": 14.0,
+  "worldMinX": -15.0,
+  "worldMaxX": 15.0,
+  "playerStartX": 3.0,
+  "mutedLookAtWarmth": 12.0,
+  "fullLookAtWarmth": 48.0
+}

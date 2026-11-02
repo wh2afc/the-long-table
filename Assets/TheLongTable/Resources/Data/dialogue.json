@@ -1,0 +1,172 @@
+{
+  "entries": [
+    { "context": "intro", "lines": [
+      { "id": "intro.1", "who": "", "text": "Spring in Harrow's Rest. The green is mud, and the table in the middle of it is three planks long." },
+      { "id": "intro.2", "who": "", "text": "You have a satchel, two heels of bread, a little coin, and one day." },
+      { "id": "intro.3", "who": "", "text": "Walk the green. Look at people properly. [E] near someone to notice them." }
+    ]},
+
+    { "context": "notice:marta", "lines": [
+      { "id": "notice.marta.1", "who": "", "text": "Marta sits on the bakery step with her hands in her lap. The oven behind her is cold." },
+      { "id": "notice.marta.2", "who": "", "text": "There's flour on her apron, but it's old flour." }
+    ]},
+    { "context": "notice:pip", "lines": [
+      { "id": "notice.pip.1", "who": "pip", "text": "Already ate." },
+      { "id": "notice.pip.2", "who": "", "text": "He says it before you ask. His lunch tin is empty. It was empty yesterday too." }
+    ]},
+    { "context": "notice:tobias", "lines": [
+      { "id": "notice.tobias.1", "who": "", "text": "Tobias is at the anvil. Six good hoes hang on his wall, and half the village is turning soil with sticks." },
+      { "id": "notice.tobias.2", "who": "", "text": "He doesn't look up. He knows you're there." }
+    ]},
+    { "context": "notice:already", "lines": [
+      { "id": "notice.already.1", "who": "", "text": "You've already taken them in this morning." }
+    ]},
+
+    { "context": "hint:act", "lines": [
+      { "id": "hint.act.1", "who": "", "text": "Midday. You have the afternoon's attention to spend. [E] near someone to see what you could do." }
+    ]},
+    { "context": "hint:spent", "lines": [
+      { "id": "hint.spent.1", "who": "", "text": "The afternoon is spent. The light is going gold. [N] to head to the table." }
+    ]},
+
+    { "context": "talk:marta", "priority": 2, "requiresAction": "marta_sit", "lines": [
+      { "id": "talk.marta.sat", "who": "marta", "text": "You can sit again, if you like. I'm not much company." }
+    ]},
+    { "context": "talk:marta", "priority": 1, "requiresAction": "marta_commission", "lines": [
+      { "id": "talk.marta.paid", "who": "marta", "text": "Your loaves will be ready by dusk." }
+    ]},
+    { "context": "talk:marta", "lines": [
+      { "id": "talk.marta.default", "who": "marta", "text": "Oh. The newcomer. Mind the mud." }
+    ]},
+    { "context": "talk:pip", "priority": 2, "requiresAction": "pip_bread_quiet", "lines": [
+      { "id": "talk.pip.quiet", "who": "pip", "text": "Somebody left bread on the step. Wasn't you, was it? ...Good bread, anyway." }
+    ]},
+    { "context": "talk:pip", "priority": 1, "requiresAction": "pip_bread_public", "lines": [
+      { "id": "talk.pip.public", "who": "pip", "text": "I said I was fine." }
+    ]},
+    { "context": "talk:pip", "lines": [
+      { "id": "talk.pip.default", "who": "pip", "text": "I'm not hungry, if that's what you're asking." }
+    ]},
+    { "context": "talk:tobias", "priority": 3, "requiresAction": "tobias_return", "lines": [
+      { "id": "talk.tobias.returned", "who": "tobias", "text": "Scrap's sorted. Didn't ask you to." },
+      { "id": "talk.tobias.returned.2", "who": "", "text": "He doesn't say thank you. He doesn't tell you to leave, either." }
+    ]},
+    { "context": "talk:tobias", "priority": 2, "requiresAction": "tobias_offer_help", "lines": [
+      { "id": "talk.tobias.again", "who": "tobias", "text": "You again." }
+    ]},
+    { "context": "talk:tobias", "priority": 1, "requiresAction": "tobias_trade", "lines": [
+      { "id": "talk.tobias.bought", "who": "tobias", "text": "Hoe working? Don't bring it back bent." }
+    ]},
+    { "context": "talk:tobias", "lines": [
+      { "id": "talk.tobias.default", "who": "tobias", "text": "If you're here to borrow something, the answer's no." }
+    ]},
+
+    { "context": "act:pip_bread_quiet", "lines": [
+      { "id": "act.pipquiet.1", "who": "", "text": "You leave a heel of bread on the step, wrapped in a cloth, and walk on without looking back." },
+      { "id": "act.pipquiet.2", "who": "", "text": "When you pass again, the cloth is folded neatly. The bread is gone." }
+    ]},
+    { "context": "act:pip_bread_public", "lines": [
+      { "id": "act.pippublic.1", "who": "player", "text": "Pip! Here. You look half starved." },
+      { "id": "act.pippublic.2", "who": "", "text": "Heads turn. Pip takes the bread, because everyone is watching. His ears go red." },
+      { "id": "act.pippublic.3", "who": "pip", "text": "...Thanks." }
+    ]},
+    { "context": "act:pip_listen", "lines": [
+      { "id": "act.piplisten.1", "who": "pip", "text": "There's a frog by the river as big as a loaf. I named him Elder Caldwell. Don't tell." },
+      { "id": "act.piplisten.2", "who": "", "text": "He talks about frogs for a long time. You let him." }
+    ]},
+    { "context": "act:marta_sit", "lines": [
+      { "id": "act.martasit.1", "who": "", "text": "You sit beside Marta on the step. Neither of you says much for a while." },
+      { "id": "act.martasit.2", "who": "marta", "text": "Henrik used to sing while the dough rose. Terrible voice. Truly terrible." },
+      { "id": "act.martasit.3", "who": "", "text": "She laughs, then stops, then decides she doesn't mind that she laughed." }
+    ]},
+    { "context": "act:marta_fix_flue", "lines": [
+      { "id": "act.martaflue.1", "who": "", "text": "You clear years of soot from the flue. It draws clean now." },
+      { "id": "act.martaflue.2", "who": "marta", "text": "That's kind of you. It still needs someone to light it." }
+    ]},
+    { "context": "act:marta_commission", "lines": [
+      { "id": "act.martapaid.1", "who": "player", "text": "I'll pay you to bake for tonight." },
+      { "id": "act.martapaid.2", "who": "marta", "text": "...All right. Coin's coin." },
+      { "id": "act.martapaid.3", "who": "", "text": "She counts it twice and doesn't meet your eye." }
+    ]},
+    { "context": "rebuff:tobias_offer_help", "lines": [
+      { "id": "rebuff.tobias.1", "who": "tobias", "text": "I don't need help. I need people to stop offering it." },
+      { "id": "rebuff.tobias.2", "who": "", "text": "He turns back to the anvil. The conversation is over." }
+    ]},
+    { "context": "act:tobias_return", "lines": [
+      { "id": "act.tobiasreturn.1", "who": "", "text": "You come back anyway. You don't ask. You start sorting his scrap pile by length." },
+      { "id": "act.tobiasreturn.2", "who": "", "text": "The hammering stops for a moment." },
+      { "id": "act.tobiasreturn.3", "who": "tobias", "text": "...Long pieces on the left." }
+    ]},
+    { "context": "act:tobias_trade", "lines": [
+      { "id": "act.tobiastrade.1", "who": "tobias", "text": "Two coin. Don't bring it back bent." },
+      { "id": "act.tobiastrade.2", "who": "", "text": "You have a good hoe now." }
+    ]},
+
+    { "context": "gather:intro", "lines": [
+      { "id": "gather.intro.1", "who": "", "text": "Dusk. Lanterns come out one at a time. People drift toward the table, or they don't." }
+    ]},
+    { "context": "gather:marta:Close", "lines": [
+      { "id": "gather.marta.close", "who": "", "text": "Marta sits beside you and passes the salt before you ask for it." }
+    ]},
+    { "context": "gather:marta:Edge", "lines": [
+      { "id": "gather.marta.edge", "who": "", "text": "Marta takes the end of the bench. She's polite. She'll leave early." }
+    ]},
+    { "context": "gather:marta:Apart", "lines": [
+      { "id": "gather.marta.apart", "who": "", "text": "Marta's window is dark. She doesn't come." }
+    ]},
+    { "context": "gather:pip:Close", "lines": [
+      { "id": "gather.pip.close.1", "who": "", "text": "Pip squeezes onto the bench and eats slowly, like he's making it last." },
+      { "id": "gather.pip.close.2", "who": "", "text": "Nobody comments. That's the kindness." }
+    ]},
+    { "context": "gather:pip:Edge", "lines": [
+      { "id": "gather.pip.edge", "who": "", "text": "Pip hovers by the fence, then sits at the far end with his hands in his pockets." }
+    ]},
+    { "context": "gather:pip:Apart", "lines": [
+      { "id": "gather.pip.apart", "who": "", "text": "Pip doesn't come. Someone says he went home early." }
+    ]},
+    { "context": "gather:tobias:Close", "lines": [
+      { "id": "gather.tobias.close.1", "who": "", "text": "Tobias sets down a bench nobody asked him to mend." },
+      { "id": "gather.tobias.close.2", "who": "tobias", "text": "Table was wobbling." }
+    ]},
+    { "context": "gather:tobias:Edge", "lines": [
+      { "id": "gather.tobias.edge", "who": "", "text": "Tobias stands at the edge with his arms crossed. But he stays." }
+    ]},
+    { "context": "gather:tobias:Apart", "lines": [
+      { "id": "gather.tobias.apart", "who": "", "text": "The forge is still ringing. Tobias doesn't come." }
+    ]},
+    { "context": "gather:prompt", "lines": [
+      { "id": "gather.prompt.1", "who": "", "text": "The talk goes quiet. You could say something about your day." }
+    ]},
+    { "context": "gather:remind", "lines": [
+      { "id": "gather.remind.1", "who": "player", "text": "Busy day! Fed Pip, helped Marta out, sorted things with Tobias..." },
+      { "id": "gather.remind.2", "who": "", "text": "People nod. Someone says, \"That's good of you.\" The table gets a little quieter." }
+    ]},
+    { "context": "gather:quiet", "lines": [
+      { "id": "gather.quiet.1", "who": "", "text": "You eat. You listen. Somebody tells a story about the flood year, and for once it ends with a joke." }
+    ]},
+    { "context": "gather:marta:leaves", "lines": [
+      { "id": "gather.marta.leaves", "who": "", "text": "Marta finds a reason to go home." }
+    ]},
+    { "context": "gather:pip:leaves", "lines": [
+      { "id": "gather.pip.leaves", "who": "", "text": "When you look for Pip, his place is empty." }
+    ]},
+    { "context": "gather:tobias:leaves", "lines": [
+      { "id": "gather.tobias.leaves", "who": "", "text": "Tobias grunts and walks back to the forge." }
+    ]},
+
+    { "context": "morning:Relit", "lines": [
+      { "id": "morning.relit.1", "who": "", "text": "Morning. There is smoke coming from the bakery chimney." },
+      { "id": "morning.relit.2", "who": "marta", "text": "Couldn't sleep. Thought I'd see if my hands still knew how." },
+      { "id": "morning.relit.3", "who": "", "text": "She's kneading. She's humming. It's a terrible voice. It's wonderful." }
+    ]},
+    { "context": "morning:Polite", "lines": [
+      { "id": "morning.polite.1", "who": "", "text": "Morning. The oven is lit. A neat row of loaves waits by the door." },
+      { "id": "morning.polite.2", "who": "marta", "text": "Anything else?" },
+      { "id": "morning.polite.3", "who": "", "text": "The door closes. Not hard. Just closed." }
+    ]},
+    { "context": "morning:Cold", "lines": [
+      { "id": "morning.cold.1", "who": "", "text": "Morning. The bakery is quiet. The oven is still cold." },
+      { "id": "morning.cold.2", "who": "", "text": "Marta is on the step again, hands in her lap." }
+    ]}
+  ]
+}

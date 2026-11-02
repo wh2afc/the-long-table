@@ -1,0 +1,19 @@
+{
+    "name": "LongTable.Editor",
+    "rootNamespace": "LongTable.EditorTools",
+    "references": [
+        "LongTable.Core",
+        "LongTable.Game"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,40 @@
+{
+  "startWarmth": 15,
+  "maxWarmth": 100,
+  "minMultiplier": 0.2,
+  "remindPenalty": 6,
+  "neutralSincerity": 0.5,
+  "privateShareForFull": 0.5,
+  "cannotRepayShareForFull": 0.34,
+  "signals": [
+    { "id": "private_help",         "weight": 1.0 },
+    { "id": "no_reminding",         "weight": 1.0 },
+    { "id": "cannot_repay",         "weight": 1.0 },
+    { "id": "stays_through_rebuff", "weight": 1.0 },
+    { "id": "no_reward_asked",      "weight": 1.5 },
+    { "id": "noticed_first",        "weight": 0.75 }
+  ],
+  "tiers": [
+    { "name": "Guarded", "minWarmth": 0 },
+    { "name": "Thawing", "minWarmth": 28 },
+    { "name": "Open",    "minWarmth": 42 }
+  ],
+  "act": {
+    "rewardRequestedPenalty": 0.6,
+    "loudRescuePenalty": 0.5,
+    "remindedPenalty": 0.4,
+    "returnAfterRebuffBonus": 0.5,
+    "rebuffedAttemptValue": 0.25,
+    "maxQuality": 1.5
+  },
+  "oven": {
+    "owner": "marta",
+    "relitRequiresFamily": "Listen",
+    "relitMinTrust": 6,
+    "relitMinSincerity": 0.6
+  },
+  "seats": {
+    "closeMinTrust": 6,
+    "edgeMinTrust": 1
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "actions": [
+    {
+      "id": "pip_bread_quiet", "target": "pip", "family": "Give", "visibility": "Private",
+      "label": "Leave a heel of bread where Pip sits, and walk on",
+      "costBread": 1, "costAttention": 1, "baseWarmth": 9, "requiresNoticed": true
+    },
+    {
+      "id": "pip_bread_public", "target": "pip", "family": "Give", "visibility": "Public",
+      "label": "Hand Pip some bread in front of everyone",
+      "costBread": 1, "costAttention": 1, "baseWarmth": 9
+    },
+    {
+      "id": "pip_listen", "target": "pip", "family": "Listen", "visibility": "Private",
+      "label": "Ask Pip about the frogs by the river",
+      "costAttention": 1, "baseWarmth": 5
+    },
+    {
+      "id": "marta_sit", "target": "marta", "family": "Listen", "visibility": "Private",
+      "label": "Sit with Marta a while. Don't fix anything",
+      "costAttention": 1, "baseWarmth": 10, "requiresNoticed": true
+    },
+    {
+      "id": "marta_fix_flue", "target": "marta", "family": "Build", "visibility": "Public",
+      "label": "Clear the soot from the oven flue",
+      "costAttention": 1, "baseWarmth": 6
+    },
+    {
+      "id": "marta_commission", "target": "marta", "family": "Give", "visibility": "Public",
+      "label": "Pay Marta to bake loaves for tonight (2 coin)",
+      "costCoin": 2, "costAttention": 1, "baseWarmth": 6,
+      "rewardRequested": true, "rewardItem": "loaves"
+    },
+    {
+      "id": "tobias_offer_help", "target": "tobias", "family": "Build", "visibility": "Public",
+      "label": "Offer to help at the forge",
+      "costAttention": 1, "baseWarmth": 6, "rebuffsFirstTime": true, "hideAfterRebuff": true
+    },
+    {
+      "id": "tobias_return", "target": "tobias", "family": "Build", "visibility": "Private",
+      "label": "Come back anyway. Sort his scrap pile without asking",
+      "costAttention": 1, "baseWarmth": 10, "requiresPriorRebuff": true
+    },
+    {
+      "id": "tobias_trade", "target": "tobias", "family": "Give", "visibility": "Public",
+      "label": "Buy one of his good hoes (2 coin)",
+      "costCoin": 2, "costAttention": 1, "baseWarmth": 5,
+      "rewardRequested": true, "rewardItem": "hoe"
+    }
+  ]
+}
