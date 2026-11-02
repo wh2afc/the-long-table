@@ -114,7 +114,8 @@ to `Screenshots/`, which git ignores.
   and licences first. Line ids are stable, so lines can move into a dialogue tool or the Unity
   Localization package later.
 - **No audio yet.** The growing folk score, including the new instrument when the oven relights,
-  is not in the slice.
+  is not in the slice. Candidates from the purchased audio library are chosen but not imported; see
+  [docs/audio](docs/audio/README.md).
 - **The warmth number is on screen** because the slice brief asks for it. The design keeps it
   hidden in the shipped game (F1 hides it).
 
@@ -136,3 +137,4 @@ choose the production version before anything big gets built on it.
 - Voice approach
 - Language list
 - Unity licence tier, to recheck before launch
+"# the-long-table" 
